@@ -1,0 +1,21 @@
+{% extends "entries/base.html" %}
+
+
+{% block content %}
+<div class="col-md-8">
+  <div class="card mb-4 mt-4">
+    <div class="card-header">
+      Logged Out
+    </div>
+    <div class="card-body ">
+      <h4>You have logged out.</h4>
+        <a href="{% url 'login' %}" >Login</a> or 
+        <a href="{% url 'register' %}" ">Sign Up</a>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
